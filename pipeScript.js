@@ -8,10 +8,8 @@ var pipeCount = 36,
 
 entrance = (Math.floor(Math.random() * exitCount) + 1);
 do {
-    exit = (Math.floor(Math.random() * exitCount)+1);
+    exit = (Math.floor(Math.random() * exitCount) + 1);
 } while (entrance == exit);
-document.write(entrance+"\n");
-document.write(exit+"\n");
 
 for (i = 0; i <= Math.sqrt(pipeCount) + 1; i++) {
     if (i == 0 || i == Math.sqrt(pipeCount) + 1) {
