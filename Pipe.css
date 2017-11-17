@@ -1,5 +1,8 @@
 .pipeTable {
-	margin: 5% 25% 0 35%;
+	margin: 0% 25% 0 35%;
+	border: none;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 .Pipe {
 	height:3em;
@@ -23,7 +26,18 @@ h1{
 }
 
 #instructions{
-	margin-top: 5%;
+	margin-top: 3%;
 	font-size: larger;
 
+}
+td{
+	border:none;
+	border-style: solid;
+	margin: 0;
+	padding: 0;
+	
+}
+
+img{
+	display: block;
 }
