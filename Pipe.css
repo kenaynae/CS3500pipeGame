@@ -1,7 +1,29 @@
 .pipeTable {
-	margin: 15% 25% 0 35%;
+	margin: 5% 25% 0 35%;
 }
 .Pipe {
 	height:3em;
 	width: 3em;
+}
+
+body{
+	 background-color: #7B7B7B;
+  
+}
+table{
+}
+h1{
+	color: #00AAAA;
+}
+#timer{
+	font-size: larger;
+	display: inline;
+	margin-left: 40%;
+	margin-right: 4%;
+}
+
+#instructions{
+	margin-top: 5%;
+	font-size: larger;
+
 }

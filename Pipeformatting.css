@@ -1,14 +1,21 @@
 /* general text formatting */
 
-h1, h2, h3, nav, footer {
- font-family: Georgia, Cambria, "Times New Roman", serif;
-}
+
 body {
    font-family: "Lucida Sans", Verdana, Arial, sans-serif;
    font-size: 80%;
+    background-color: #000000;
+  
 }
-
-div#Tytle, div#choiceBox, div#gameList {
+h1 {
+   margin: 0.25em auto;
+   background-color: #afc647;
+    color:#EBF4FB;
+   width: 80%;
+   padding: 1em 0.6em;
+   
+}
+div#Tytle, div#choiceBox, div#gameList{
    margin: 0.25em auto;
    background-color: #EBF4FB;
    padding: 1em;
@@ -21,11 +28,6 @@ div#artistBox {
    background-color: #FAFCFF;
    }
 
-table {
-   border: collapse; 
-   border-spacing: 0;
-   
-}
 
 table tbody td{
    border-top: 1pt solid #95BEF0;   
@@ -41,22 +43,4 @@ table thead {
    background-color: #EBF4FB ;
 }
 
-table tbody td:first-child  {
-   text-align: center;
-   padding: 0.5em 0em;   
-}
-
-caption {
-   background-color: #95BEF0;
-      padding: 0.5em 0.5em; 
-      font-weight: bold;
-      font-size: 1.2em;
-}
-
-.bigImg{
-	position:absolute;
-	border: solid 10px black;
-	margin:10px;
-	background-color:#FFFFFF;
-	padding:10px;
 }
