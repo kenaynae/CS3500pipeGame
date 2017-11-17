@@ -9,7 +9,7 @@ let start=0;
 
 
 function update(end = 0){
-    time = 50000;
+    time = 2000000;
     const deltaTime = end - start;
     tl= (time-deltaTime)/1000;
     timeLeft=tl.toFixed(1);

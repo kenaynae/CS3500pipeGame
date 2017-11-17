@@ -33,6 +33,7 @@ h1{
 td{
 	border:none;
 	border-style: solid;
+	border-color: #000000;
 	margin: 0;
 	padding: 0;
 	
@@ -41,3 +42,7 @@ td{
 img{
 	display: block;
 }
+
+#edge{
+	
+	border: none;
