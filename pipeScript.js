@@ -1,20 +1,41 @@
-var pipeCount = 36;
-var pipeArray = new Array();
+var pipeCount = 36,
+    pipeArray = new Array(),
+    i,
+    j,
+    exitCount = 24,
+    entrance,
+    exit;
 
-pipeArray[0] = new Array();
+entrance = (Math.floor(Math.random() * exitCount) + 1);
+do {
+    exit = (Math.floor(Math.random() * exitCount) + 1);
+} while (entrance !== exit);
 
-for (var i = 1; i <= Math.sqrt(pipeCount); i ++) {
-	pipeArray[i] = new Array();
-	for (var j = 1; j <= Math.sqrt(pipeCount); j ++) {
-		pipeArray[i][j] = "images/Pipe" + (Math.floor(Math.random() * 6) + 1) + ".png";
-	}
+for (i = 0; i <= Math.sqrt(pipeCount) + 1; i++) {
+    if (i == 0 || i == Math.sqrt(pipeCount) + 1) {
+        pipeArray[i] = new Array();
+        for (j = 0; j <= Math.sqrt(pipeCount) + 1; j++) {
+		    pipeArray[i][j] = "images/Blank.png";
+        }
+    } else {
+        pipeArray[i] = new Array();
+	    for (j = 0; j <= Math.sqrt(pipeCount) + 1; j++) {
+            if (j == 0 || j == Math.sqrt(pipeCount) + 1) {
+                pipeArray[i][j] = "images/Blank.png";
+            } else {
+                pipeArray[i][j] = "images/Pipe" + (Math.floor(Math.random() * 6) + 1) + ".png";
+            }
+	    }
+    }
+	
 }
 pipeArray.push(new Array());
 
 function writePipes() {
-	for (var i = 1; i <= Math.sqrt(pipeCount); i ++) {
+    "use strict";
+	for (i = 0; i <= Math.sqrt(pipeCount) + 1; i++) {
 		document.write("<tr>");
-		for (var j = 1; j <= Math.sqrt(pipeCount); j ++) {
+		for (j = 0; j <= Math.sqrt(pipeCount) + 1; j++) {
 			document.write("<td><img src=");
 			document.write(pipeArray[i][j]);
 			document.write(' class="Pipe"></td>');
