@@ -21,7 +21,7 @@ for (i = 0; i <= Math.sqrt(pipeCount) + 1; i++) {
             } else if (((entrance-18) == j || (exit-18) == j) && i == Math.sqrt(pipeCount) + 1 && j !== 0) {
                 pipeArray[i][j] = "images/ExitDown.png";
             } else {
-                pipeArray[i][j] = "images/Blank.png";
+               pipeArray[i][j] = "images/Blank.png";
             }
         }
     } else {
@@ -54,7 +54,11 @@ function writePipes() {
         document.write("<tr>");
         }
         for (j = 0; j <= Math.sqrt(pipeCount) + 1; j++) {
+<<<<<<< HEAD
+		if(j===0 || i===0 || j== Math.sqrt(pipeCount) + 1 || i== Math.sqrt(pipeCount) + 1 ){
+=======
 		if(j===0 || j == Math.sqrt(pipeCount) + 1 || i == 0 || i == Math.sqrt(pipeCount) + 1){
+>>>>>>> 69a2f3790a738715d0ddd882a96c1dcb41f58f14
         
         	document.write("<td id='edge'><img src=");
 			document.write(pipeArray[i][j]);

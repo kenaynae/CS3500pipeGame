@@ -11,16 +11,20 @@
    <h1>Incoherent Game Libary</h1>
 </div>   
 <div id="choiceBox">
+<<<<<<< HEAD
+   <select name="filter" id="Selected">
+=======
    <select name="filter">
+>>>>>>> 69a2f3790a738715d0ddd882a96c1dcb41f58f14
       <option value="0">Genre</option>
       <option value="1">Puzzle</option>
       <option value="1">Yes/No</option>
       <option value="2">Mannerism</option>
    </select>
-   <input type="submit" value="Filter" />
+   <input type="button" value="Filter" onclick="myFunction();" />
 </div>
 <div id="gameList">
-   <table>
+   <table id="table">
       <thead>
          <tr>
             <th colspan="1">Link</th>
@@ -75,6 +79,38 @@
          </tr>
       </tbody>
    </table>
+   <script type="text/javascript">
+function myFunction() {
+// test2
+ var newinput = document.getElementById("Selected");
+ var text = newinput.options[newinput.selectedIndex].text;
+ console.log(text);
+ var Uptext = text.toUpperCase();
+ var table = document.getElementById("table");
+ var tr = table.getElementsByTagName("tr");
+if (text=="Genre"){
+   
+for (var i = 0; i<tr.length;i++){
+   td= tr[i].getElementsByTagName("td")[4];
+       tr[i].style.display = "";
+}
+}
+else{
+for (var k = 0; k<tr.length;k++){
+   td= tr[k].getElementsByTagName("td")[4];
+   
+ if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(Uptext) > -1) {
+        tr[k].style.display = "";
+      } else {
+        tr[k].style.display = "none";
+      }
+    }       
+  }
+}
+}
+   </script>
+   
 </div>   
 </form>
 
