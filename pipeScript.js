@@ -46,7 +46,7 @@ pipeArray.push(new Array());
 function writePipes() {
     "use strict";
 	for (i = 0; i <= Math.sqrt(pipeCount) + 1; i++) {
-		if(i===0){
+		if(i===0 || i == Math.sqrt(pipeCount) + 1){
         document.write("<tr id='edge'>");
 		    
         }
@@ -54,7 +54,7 @@ function writePipes() {
         document.write("<tr>");
         }
         for (j = 0; j <= Math.sqrt(pipeCount) + 1; j++) {
-		if(j===0){
+		if(j===0 || j == Math.sqrt(pipeCount) + 1 || i == 0 || i == Math.sqrt(pipeCount) + 1){
         
         	document.write("<td id='edge'><img src=");
 			document.write(pipeArray[i][j]);

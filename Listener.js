@@ -1,9 +1,13 @@
-var holder = null;
+var img1;
+var holder;
 $(".Pipe").click(function() {
-	if (holder == null)
-		holder = $(this);
+	if (!(($(this).parent().attr("id")) == "edge")) {
+	if (img1 == null)
+		img1 = $(this).attr("src");
 	else {
-		$(this) = holder;
-		holder = null;
+		holder = this.src;
+		this.src = img1;
+		img1 = holder;
 	}
+}
 });
