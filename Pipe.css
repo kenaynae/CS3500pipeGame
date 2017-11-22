@@ -1,16 +1,22 @@
 .pipeTable {
 	margin: 0% 25% 0 35%;
 	border: none;
-	border-collapse: collapse;
+/*	border-collapse: collapse;*/
 	border-spacing: 0;
 }
 .Pipe {
 	height:3em;
 	width: 3em;
 }
+td:hover {
+	border-color: red;
+}
 .extraTable {
-	border: none;
-	margin: 5% 0 0 20%;
+	position: absolute;
+	left: 68em;
+	top: 15em;
+/*	float: right;
+	padding: 12% 25% 0 0; */
 }
 .Holder {
 	height:5em;
@@ -18,9 +24,6 @@
 }
 body{
 	 background-color: #7B7B7B;
-  
-}
-table{
 }
 h1{
 	color: #00AAAA;
@@ -31,11 +34,9 @@ h1{
 	margin-left: 40%;
 	margin-right: 4%;
 }
-
 #instructions{
 	margin-top: 3%;
 	font-size: larger;
-
 }
 td{
 	border:none;
@@ -43,13 +44,10 @@ td{
 	border-color: #000000;
 	margin: 0;
 	padding: 0;
-	
 }
-
-img{
-	display: block;
-}
-
 #edge{
 	border: none;
+}
+img{
+	display: block;
 }
