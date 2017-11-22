@@ -1,12 +1,15 @@
 .pipeTable {
 	margin: 0% 25% 0 35%;
 	border: none;
-	border-collapse: collapse;
+/*	border-collapse: collapse;*/
 	border-spacing: 0;
 }
 .Pipe {
 	height:3em;
 	width: 3em;
+}
+td:hover {
+	border-color: red;
 }
 .extraTable {
 	position: absolute;
