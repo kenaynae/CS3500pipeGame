@@ -2,6 +2,7 @@ var pipeCount = 36,
     pipeArray = new Array(),
     i,
     j,
+    k,
     exitCount = 24,
     entrance,
     exit,
@@ -47,7 +48,7 @@ for (i = 0; i <= Math.sqrt(pipeCount) + 1; i++) {
                     pipeArray[i][j] = ["images/Pipe" + pipe + ".png", 0, 3];
                 } else {
                     pipeArray[i][j] = ["images/Pipe" + pipe + ".png", 0, 1];
-                } 
+                }
             }
 	    }
     }
