@@ -9,5 +9,6 @@ $(".Pipe").click(function() {
 		this.src = img1;
 		img1 = holder;
 	}
+	$(".Holder").attr("src", img1)
 }
 });
