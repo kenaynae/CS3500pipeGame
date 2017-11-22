@@ -12,11 +12,11 @@ td:hover {
 	border-color: red;
 }
 .extraTable {
-	position: absolute;
+/*	position: absolute;
 	left: 68em;
 	top: 15em;
-/*	float: right;
-	padding: 12% 25% 0 0; */
+*/	float: right;
+	padding: 12% 25% 0 0;
 }
 .Holder {
 	height:5em;
@@ -27,6 +27,7 @@ body{
 }
 h1{
 	color: #00AAAA;
+	margin-left: 37%;
 }
 #timer{
 	font-size: larger;
@@ -34,9 +35,15 @@ h1{
 	margin-left: 40%;
 	margin-right: 4%;
 }
+#Moves {
+	font-size: larger;
+	display: block;
+	margin-left: 42%;
+}
 #instructions{
 	margin-top: 3%;
 	font-size: larger;
+	margin-left: 32%;
 }
 td{
 	border:none;
